@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WinFormsApp1123
 {
-    public partial class Form3 : Form
+    public partial class Order_Form : Form
     {
-        public Form3()
+        public Order_Form()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Order Submitted","Success");
         }
     }
 }

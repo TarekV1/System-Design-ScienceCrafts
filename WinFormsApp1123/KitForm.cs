@@ -1,8 +1,8 @@
 ﻿namespace WinFormsApp1123
 {
-    public partial class Form2 : Form
+    public partial class KitForm : Form
     {
-        public Form2()
+        public KitForm()
         {
             InitializeComponent();
         }

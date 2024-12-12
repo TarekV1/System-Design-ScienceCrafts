@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1123
 {
-    partial class Form2
+    partial class KitForm
     {
         /// <summary>
         /// Required designer variable.

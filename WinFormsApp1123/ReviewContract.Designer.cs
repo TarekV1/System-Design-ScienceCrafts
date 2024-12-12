@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1123
 {
-    partial class Form1
+    partial class ReviewContract
     {
         /// <summary>
         ///  Required designer variable.

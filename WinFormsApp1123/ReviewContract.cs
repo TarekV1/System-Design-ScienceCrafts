@@ -1,12 +1,12 @@
 namespace WinFormsApp1123
 {
-    public partial class Form1 : Form
+    public partial class ReviewContract : Form
     {
         SortedDictionary<int, int> dic;
         FileStream text;
         StreamReader textreader;
         StreamWriter textwriter;
-        public Form1()
+        public ReviewContract()
         {
             InitializeComponent();
         }
