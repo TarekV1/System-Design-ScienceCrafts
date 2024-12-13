@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Wmail_lb = new Label();
+            Email_lb = new Label();
             Password_lb = new Label();
-            UserName_tx = new TextBox();
+            Email_tx = new TextBox();
             Password_tx = new TextBox();
             Login_bt = new Button();
             SuspendLayout();
             // 
-            // Wmail_lb
+            // Email_lb
             // 
-            Wmail_lb.AutoSize = true;
-            Wmail_lb.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            Wmail_lb.Location = new Point(92, 90);
-            Wmail_lb.Name = "Wmail_lb";
-            Wmail_lb.Size = new Size(63, 28);
-            Wmail_lb.TabIndex = 0;
-            Wmail_lb.Text = "Email";
+            Email_lb.AutoSize = true;
+            Email_lb.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            Email_lb.Location = new Point(92, 90);
+            Email_lb.Name = "Email_lb";
+            Email_lb.Size = new Size(63, 28);
+            Email_lb.TabIndex = 0;
+            Email_lb.Text = "Email";
             // 
             // Password_lb
             // 
@@ -55,13 +55,15 @@
             Password_lb.TabIndex = 1;
             Password_lb.Text = "Password";
             // 
-            // UserName_tx
+            // Email_tx
             // 
-            UserName_tx.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            UserName_tx.Location = new Point(219, 87);
-            UserName_tx.Name = "UserName_tx";
-            UserName_tx.Size = new Size(165, 41);
-            UserName_tx.TabIndex = 2;
+            Email_tx.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            Email_tx.Location = new Point(219, 87);
+            Email_tx.Name = "Email_tx";
+            Email_tx.Size = new Size(165, 41);
+            Email_tx.TabIndex = 2;
+            Email_tx.TextChanged += Email_tx_TextChanged;
+            Email_tx.Validating += Email_tx_Validating;
             // 
             // Password_tx
             // 
@@ -70,7 +72,8 @@
             Password_tx.Name = "Password_tx";
             Password_tx.Size = new Size(165, 41);
             Password_tx.TabIndex = 3;
-            Password_tx.TextChanged += Password_tx_TextChanged;
+            Password_tx.UseSystemPasswordChar = true;
+            Password_tx.Validating += Password_tx_Validating;
             // 
             // Login_bt
             // 
@@ -90,9 +93,9 @@
             ClientSize = new Size(514, 396);
             Controls.Add(Login_bt);
             Controls.Add(Password_tx);
-            Controls.Add(UserName_tx);
+            Controls.Add(Email_tx);
             Controls.Add(Password_lb);
-            Controls.Add(Wmail_lb);
+            Controls.Add(Email_lb);
             Name = "LoginForm";
             Text = "Login Form";
             ResumeLayout(false);
@@ -101,9 +104,9 @@
 
         #endregion
 
-        private Label Wmail_lb;
+        private Label Email_lb;
         private Label Password_lb;
-        private TextBox UserName_tx;
+        private TextBox Email_tx;
         private TextBox Password_tx;
         private Button Login_bt;
     }

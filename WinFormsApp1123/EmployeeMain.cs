@@ -15,10 +15,12 @@ namespace WinFormsApp1123
         public EmployeeMain()
         {
             InitializeComponent();
+            //Awaiting Display Employee Name
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //
             if (roleCheck().Equals("Admin"))
             {
                 this.Hide();
@@ -34,9 +36,9 @@ namespace WinFormsApp1123
 
         private void button3_Click(object sender, EventArgs e)
         {
-                this.Hide();
-                new KitForm().ShowDialog();
-                this.Show();
+            this.Hide();
+            new KitForm().ShowDialog();
+            this.Show();
         }
         public string roleCheck()
         {

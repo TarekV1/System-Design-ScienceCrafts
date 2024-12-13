@@ -11,7 +11,7 @@ namespace _5RYA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (check_credientials(UserName_tx.Text, Password_tx.Text))
+            if (check_credientials(Email_tx.Text, Password_tx.Text))
             {
                 MessageBox.Show("Login Succesfull", "Login Succesfull");
                 this.Hide();
@@ -24,10 +24,24 @@ namespace _5RYA
         public bool check_credientials(string username, string password)
         {
             //Awaiting Implementation
+            Email_tx_Validating(new object(), new System.ComponentModel.CancelEventArgs());
+            Password_tx_Validating(new object(), new System.ComponentModel.CancelEventArgs());
             return true;
         }
 
-        private void Password_tx_TextChanged(object sender, EventArgs e)
+        private void Email_tx_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (Email_tx.Text.Equals(""))
+                MessageBox.Show("Email is a required field", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void Password_tx_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (Password_tx.Text.Equals(""))
+                MessageBox.Show("Password is a required field", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void Email_tx_TextChanged(object sender, EventArgs e)
         {
 
         }

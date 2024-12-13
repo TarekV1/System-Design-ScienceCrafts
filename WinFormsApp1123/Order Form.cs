@@ -19,7 +19,15 @@ namespace WinFormsApp1123
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Order Submitted","Success");
+            MessageBox.Show("Order Submitted", "Success");
+            //Awaiting SQL
+        }
+
+        private void calcPrice(object sender, EventArgs e)
+        {
+            //Awaiting Implementation
+            double price = 1.0 / 0;
+            label5.Text = $"Price : {price}";
         }
     }
 }

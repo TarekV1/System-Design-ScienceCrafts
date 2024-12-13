@@ -34,9 +34,7 @@
             label2 = new Label();
             comboBox3 = new ComboBox();
             label3 = new Label();
-            button1 = new Button();
             button2 = new Button();
-            button3 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -100,51 +98,30 @@
             label3.Text = "Date:";
             label3.Click += label3_Click;
             // 
-            // button1
-            // 
-            button1.Font = new Font("MV Boli", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(267, 303);
-            button1.Name = "button1";
-            button1.Size = new Size(120, 47);
-            button1.TabIndex = 6;
-            button1.Text = "Print";
-            button1.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
-            button2.Font = new Font("MV Boli", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Location = new Point(443, 303);
+            button2.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.Location = new Point(367, 317);
             button2.Name = "button2";
-            button2.Size = new Size(127, 47);
+            button2.Size = new Size(180, 47);
             button2.TabIndex = 7;
-            button2.Text = "Export as pdf";
+            button2.Text = "Export As PDF";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
             // 
-            // button3
-            // 
-            button3.Font = new Font("MV Boli", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button3.Location = new Point(620, 303);
-            button3.Name = "button3";
-            button3.Size = new Size(120, 47);
-            button3.TabIndex = 8;
-            button3.Text = "View";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // ReviewContract
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(984, 405);
-            Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
             Controls.Add(comboBox3);
             Controls.Add(label3);
             Controls.Add(comboBox2);
             Controls.Add(label2);
             Controls.Add(comboBox1);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "ReviewContract";
             Text = "Review Client Contract";
             Load += Form1_Load;
             ResumeLayout(false);
@@ -159,8 +136,6 @@
         private Label label2;
         private ComboBox comboBox3;
         private Label label3;
-        private Button button1;
         private Button button2;
-        private Button button3;
     }
 }

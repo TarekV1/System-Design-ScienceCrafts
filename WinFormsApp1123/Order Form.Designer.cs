@@ -57,7 +57,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("MV Boli", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(91, 185);
+            label2.Location = new Point(91, 197);
             label2.Name = "label2";
             label2.Size = new Size(112, 31);
             label2.TabIndex = 1;
@@ -67,7 +67,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("MV Boli", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(91, 250);
+            label3.Location = new Point(91, 262);
             label3.Name = "label3";
             label3.Size = new Size(96, 31);
             label3.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("MV Boli", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(91, 315);
+            label4.Location = new Point(91, 327);
             label4.Name = "label4";
             label4.Size = new Size(101, 31);
             label4.TabIndex = 3;
@@ -87,7 +87,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("MV Boli", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(290, 364);
+            label5.Location = new Point(214, 397);
             label5.Name = "label5";
             label5.Size = new Size(101, 31);
             label5.TabIndex = 4;
@@ -97,28 +97,34 @@
             // 
             comboBox1.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(290, 185);
+            comboBox1.Items.AddRange(new object[] { "Item1", "Item2", "Item3" });
+            comboBox1.Location = new Point(290, 197);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(204, 36);
             comboBox1.TabIndex = 5;
+            comboBox1.SelectionChangeCommitted += calcPrice;
             // 
             // comboBox2
             // 
             comboBox2.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(290, 250);
+            comboBox2.Items.AddRange(new object[] { "Item1", "Item2", "Item3" });
+            comboBox2.Location = new Point(290, 262);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(204, 36);
             comboBox2.TabIndex = 6;
+            comboBox2.SelectionChangeCommitted += calcPrice;
             // 
             // comboBox3
             // 
             comboBox3.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(290, 310);
+            comboBox3.Items.AddRange(new object[] { "Item1", "Item2", "Item3" });
+            comboBox3.Location = new Point(290, 322);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(204, 36);
             comboBox3.TabIndex = 7;
+            comboBox3.SelectionChangeCommitted += calcPrice;
             // 
             // label6
             // 
@@ -159,7 +165,7 @@
             // button1
             // 
             button1.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(307, 407);
+            button1.Location = new Point(572, 407);
             button1.Name = "button1";
             button1.Size = new Size(105, 60);
             button1.TabIndex = 12;

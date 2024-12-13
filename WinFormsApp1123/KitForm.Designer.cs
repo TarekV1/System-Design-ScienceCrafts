@@ -63,6 +63,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(272, 41);
             textBox1.TabIndex = 2;
+            textBox1.Validating += textBox1_Validating;
             // 
             // textBox2
             // 
@@ -72,6 +73,8 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(272, 41);
             textBox2.TabIndex = 3;
+            textBox2.TextChanged += textBox2_TextChanged;
+            textBox2.Validating += textBox2_Validating;
             // 
             // button1
             // 
@@ -82,8 +85,9 @@
             button1.TabIndex = 4;
             button1.Text = "Submit";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // Form2
+            // KitForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -93,7 +97,7 @@
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Form2";
+            Name = "KitForm";
             Text = "Kit Submission";
             ResumeLayout(false);
             PerformLayout();
