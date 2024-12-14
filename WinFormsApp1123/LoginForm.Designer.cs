@@ -1,4 +1,4 @@
-﻿namespace _5RYA
+﻿namespace Login
 {
     partial class LoginForm
     {

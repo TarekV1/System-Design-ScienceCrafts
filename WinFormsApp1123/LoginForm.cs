@@ -1,6 +1,6 @@
 using WinFormsApp1123;
 
-namespace _5RYA
+namespace Login
 {
     public partial class LoginForm : Form
     {

@@ -65,7 +65,7 @@
             label1.TabIndex = 2;
             label1.Text = "Join As";
             // 
-            // Form4
+            // Home
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -73,8 +73,9 @@
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
-            Name = "Form4";
+            Name = "Home";
             Text = "Form4";
+            Load += Home_Load;
             ResumeLayout(false);
             PerformLayout();
         }
