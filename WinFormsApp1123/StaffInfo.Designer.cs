@@ -31,24 +31,24 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            label7 = new Label();
             label8 = new Label();
             label9 = new Label();
             comboBox1 = new ComboBox();
-            label10 = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox7 = new TextBox();
             textBox8 = new TextBox();
             textBox9 = new TextBox();
             textBox10 = new TextBox();
             button2 = new Button();
+            label4 = new Label();
+            label7 = new Label();
+            label10 = new Label();
+            textBox4 = new TextBox();
+            textBox5 = new TextBox();
+            textBox7 = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -81,16 +81,6 @@
             label3.TabIndex = 2;
             label3.Text = "Bonuses:";
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(537, 260);
-            label4.Name = "label4";
-            label4.Size = new Size(125, 28);
-            label4.TabIndex = 3;
-            label4.Text = "Deductions:";
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -110,16 +100,6 @@
             label6.Size = new Size(75, 28);
             label6.TabIndex = 8;
             label6.Text = "Name:";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(44, 265);
-            label7.Name = "label7";
-            label7.Size = new Size(94, 28);
-            label7.TabIndex = 7;
-            label7.Text = "Address:";
             // 
             // label8
             // 
@@ -151,16 +131,6 @@
             comboBox1.TabIndex = 9;
             comboBox1.Text = "    ~~Select Staff~~";
             // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(334, 316);
-            label10.Name = "label10";
-            label10.Size = new Size(138, 28);
-            label10.TabIndex = 10;
-            label10.Text = "Department:";
-            // 
             // textBox1
             // 
             textBox1.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
@@ -187,33 +157,6 @@
             textBox3.ReadOnly = true;
             textBox3.Size = new Size(217, 41);
             textBox3.TabIndex = 13;
-            // 
-            // textBox4
-            // 
-            textBox4.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox4.Location = new Point(227, 262);
-            textBox4.Name = "textBox4";
-            textBox4.ReadOnly = true;
-            textBox4.Size = new Size(217, 41);
-            textBox4.TabIndex = 14;
-            // 
-            // textBox5
-            // 
-            textBox5.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.Location = new Point(517, 313);
-            textBox5.Name = "textBox5";
-            textBox5.ReadOnly = true;
-            textBox5.Size = new Size(217, 41);
-            textBox5.TabIndex = 15;
-            // 
-            // textBox7
-            // 
-            textBox7.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox7.Location = new Point(709, 257);
-            textBox7.Name = "textBox7";
-            textBox7.ReadOnly = true;
-            textBox7.Size = new Size(217, 41);
-            textBox7.TabIndex = 19;
             // 
             // textBox8
             // 
@@ -253,6 +196,63 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(537, 260);
+            label4.Name = "label4";
+            label4.Size = new Size(125, 28);
+            label4.TabIndex = 3;
+            label4.Text = "Deductions:";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(44, 265);
+            label7.Name = "label7";
+            label7.Size = new Size(94, 28);
+            label7.TabIndex = 7;
+            label7.Text = "Address:";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Location = new Point(334, 316);
+            label10.Name = "label10";
+            label10.Size = new Size(138, 28);
+            label10.TabIndex = 10;
+            label10.Text = "Department:";
+            // 
+            // textBox4
+            // 
+            textBox4.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox4.Location = new Point(227, 262);
+            textBox4.Name = "textBox4";
+            textBox4.ReadOnly = true;
+            textBox4.Size = new Size(217, 41);
+            textBox4.TabIndex = 14;
+            // 
+            // textBox5
+            // 
+            textBox5.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox5.Location = new Point(517, 313);
+            textBox5.Name = "textBox5";
+            textBox5.ReadOnly = true;
+            textBox5.Size = new Size(217, 41);
+            textBox5.TabIndex = 15;
+            // 
+            // textBox7
+            // 
+            textBox7.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox7.Location = new Point(709, 257);
+            textBox7.Name = "textBox7";
+            textBox7.ReadOnly = true;
+            textBox7.Size = new Size(217, 41);
+            textBox7.TabIndex = 19;
+            // 
             // StaffInfo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -290,23 +290,23 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private Label label4;
         private Label label5;
         private Label label6;
-        private Label label7;
         private Label label8;
         private Label label9;
         private ComboBox comboBox1;
-        private Label label10;
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox7;
         private TextBox textBox8;
         private TextBox textBox9;
         private TextBox textBox10;
         private Button button2;
+        private Label label4;
+        private Label label7;
+        private Label label10;
+        private TextBox textBox4;
+        private TextBox textBox5;
+        private TextBox textBox7;
     }
 }

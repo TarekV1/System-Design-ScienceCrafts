@@ -45,5 +45,22 @@ namespace Login
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Register().ShowDialog();
+            this.Show();
+        }
+
+        private void label1_MouseHover(object sender, EventArgs e)
+        {
+            label1.ForeColor = Color.Blue;
+        }
+
+        private void label1_MouseLeave(object sender, EventArgs e)
+        {
+            label1.ForeColor = Color.Black;
+        }
     }
 }

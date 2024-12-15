@@ -33,6 +33,7 @@
             Email_tx = new TextBox();
             Password_tx = new TextBox();
             Login_bt = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // Email_lb
@@ -86,11 +87,25 @@
             Login_bt.UseVisualStyleBackColor = true;
             Login_bt.Click += button1_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(408, 360);
+            label1.Name = "label1";
+            label1.Size = new Size(102, 28);
+            label1.TabIndex = 5;
+            label1.Text = "Register?";
+            label1.Click += label1_Click;
+            label1.MouseLeave += label1_MouseLeave;
+            label1.MouseHover += label1_MouseHover;
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(514, 396);
+            ClientSize = new Size(522, 397);
+            Controls.Add(label1);
             Controls.Add(Login_bt);
             Controls.Add(Password_tx);
             Controls.Add(Email_tx);
@@ -109,5 +124,6 @@
         private TextBox Email_tx;
         private TextBox Password_tx;
         private Button Login_bt;
+        private Label label1;
     }
 }

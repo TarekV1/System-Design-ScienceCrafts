@@ -28,31 +28,38 @@ namespace WinFormsApp1123
             //IMPORTANT
             //REMOVE BEFOR BUILD
             //ONLY USE TO TEST APP WITHOUT DATABASE
-            if (false)
+            //if (false)
             {
                 ////////////////
 
-                while (true)
+               // while (true)
                 {
+                    TryAgain:
                     try
                     {
+                        Program.Connection.Close();
                         Program.Connection.Open();
+                        MessageBox.Show("Connected");
                     }
                     catch (Exception er)
                     {
                         if (DialogResult.Cancel.Equals(
                             MessageBox.Show(
-                            "Oops!\nSomthing went wrong.\n" + er.Message
+                            "Oops!\nSomething went wrong.\n" + er.Message
                             , "Error"
                             , MessageBoxButtons.RetryCancel
                             , MessageBoxIcon.Error))
                             )
                         {
-                            break;
+                            this.Close();
+                        }
+                        else
+                        {
+                            goto TryAgain;
                         }
                     }
                 }
-                this.Close();
+               
 
 
             }
