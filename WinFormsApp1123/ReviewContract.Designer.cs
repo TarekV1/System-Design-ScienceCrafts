@@ -96,7 +96,6 @@
             label3.Size = new Size(66, 28);
             label3.TabIndex = 4;
             label3.Text = "Date:";
-            label3.Click += label3_Click;
             // 
             // button2
             // 

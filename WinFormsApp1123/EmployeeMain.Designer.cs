@@ -88,6 +88,7 @@
             Controls.Add(label1);
             Name = "EmployeeMain";
             Text = "EmployeeMain";
+            Load += EmployeeMain_Load;
             ResumeLayout(false);
             PerformLayout();
         }

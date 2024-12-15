@@ -45,44 +45,40 @@
             // address_tx
             // 
             address_tx.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            address_tx.Location = new Point(417, 256);
+            address_tx.Location = new Point(417, 283);
             address_tx.Name = "address_tx";
             address_tx.Size = new Size(297, 41);
             address_tx.TabIndex = 52;
-            address_tx.TextChanged += textBox4_TextChanged;
             // 
             // phonenum_tx
             // 
             phonenum_tx.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            phonenum_tx.Location = new Point(417, 209);
+            phonenum_tx.Location = new Point(417, 236);
             phonenum_tx.Name = "phonenum_tx";
             phonenum_tx.Size = new Size(297, 41);
             phonenum_tx.TabIndex = 51;
-            phonenum_tx.TextChanged += textBox3_TextChanged;
             // 
             // email_tx
             // 
             email_tx.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            email_tx.Location = new Point(417, 115);
+            email_tx.Location = new Point(417, 142);
             email_tx.Name = "email_tx";
             email_tx.Size = new Size(297, 41);
             email_tx.TabIndex = 50;
-            email_tx.TextChanged += textBox2_TextChanged;
             // 
             // Name_tx
             // 
             Name_tx.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            Name_tx.Location = new Point(417, 68);
+            Name_tx.Location = new Point(417, 95);
             Name_tx.Name = "Name_tx";
             Name_tx.Size = new Size(297, 41);
             Name_tx.TabIndex = 49;
-            Name_tx.TextChanged += textBox1_TextChanged;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(234, 71);
+            label6.Location = new Point(234, 98);
             label6.Name = "label6";
             label6.Size = new Size(75, 28);
             label6.TabIndex = 47;
@@ -92,7 +88,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(228, 259);
+            label7.Location = new Point(228, 286);
             label7.Name = "label7";
             label7.Size = new Size(94, 28);
             label7.TabIndex = 46;
@@ -102,7 +98,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(228, 212);
+            label8.Location = new Point(228, 239);
             label8.Name = "label8";
             label8.Size = new Size(161, 28);
             label8.TabIndex = 45;
@@ -112,7 +108,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(234, 118);
+            label9.Location = new Point(234, 145);
             label9.Name = "label9";
             label9.Size = new Size(71, 28);
             label9.TabIndex = 44;
@@ -131,7 +127,7 @@
             // button1
             // 
             button1.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(504, 337);
+            button1.Location = new Point(504, 364);
             button1.Name = "button1";
             button1.Size = new Size(112, 41);
             button1.TabIndex = 60;
@@ -142,7 +138,7 @@
             // password_tx
             // 
             password_tx.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            password_tx.Location = new Point(417, 162);
+            password_tx.Location = new Point(417, 189);
             password_tx.Name = "password_tx";
             password_tx.Size = new Size(297, 41);
             password_tx.TabIndex = 62;
@@ -151,7 +147,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(228, 165);
+            label3.Location = new Point(228, 192);
             label3.Name = "label3";
             label3.Size = new Size(108, 28);
             label3.TabIndex = 61;
