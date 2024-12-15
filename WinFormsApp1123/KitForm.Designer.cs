@@ -39,7 +39,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(34, 26);
+            label1.Location = new Point(35, 79);
             label1.Name = "label1";
             label1.Size = new Size(107, 28);
             label1.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(34, 114);
+            label2.Location = new Point(35, 167);
             label2.Name = "label2";
             label2.Size = new Size(160, 28);
             label2.TabIndex = 1;
@@ -59,7 +59,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(366, 23);
+            textBox1.Location = new Point(367, 76);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(272, 41);
             textBox1.TabIndex = 2;
@@ -68,7 +68,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(366, 111);
+            textBox2.Location = new Point(367, 164);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(272, 41);

@@ -3,7 +3,7 @@ namespace WinFormsApp1123
 {
     internal static class Program
     {
-        public static SqlConnection Connection = new SqlConnection(@"Server=DESKTOP-4H7QR04\SQLEXPRESS;Database=ScienceCrafts;Trusted_Connection=True;");
+        public static SqlConnection Connection = new SqlConnection(@"Server=DESKTOP-SUPS7IP\SQLEXPRESS03;Database=ScienceCrafts;Trusted_Connection=True;");
         public static SqlCommand Command = new SqlCommand();
         /// <summary>
         ///  The main entry point for the application.

@@ -61,6 +61,7 @@ namespace Login
                 reader.Read();
                 name = " " + (string)reader["name"];
                 role = (string)reader["role"];
+                reader.Close();
                 return true;
             }
             else

@@ -15,7 +15,6 @@
 
         private void textBox1_Validating(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            //Awaiting validation that name is unique
             if (textBox1.Text.Equals(""))
                 MessageBox.Show("Kit Name is a required field", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
@@ -33,8 +32,15 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Awating SQL Connection
-            MessageBox.Show("Kit Submitted Successfully");
+            Program.Command.Connection = Program.Connection;
+            Program.Command.CommandText = "insert into KitInfo(name,description) values(@name,@description)";
+            Program.Command.Parameters.Clear();
+            Program.Command.Parameters.AddWithValue("@name",textBox1.Text);
+            Program.Command.Parameters.AddWithValue("@description", textBox2.Text);
+            if(Program.Command.ExecuteNonQuery() > 0)
+                MessageBox.Show("Kit Submitted Successfully", "Submission",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            else
+                MessageBox.Show("Oops Something Went Wrong", "Submission", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }
