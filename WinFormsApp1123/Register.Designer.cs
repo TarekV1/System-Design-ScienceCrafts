@@ -40,6 +40,7 @@
             button1 = new Button();
             password_tx = new TextBox();
             label3 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // address_tx
@@ -153,11 +154,23 @@
             label3.TabIndex = 61;
             label3.Text = "Password:";
             // 
+            // button2
+            // 
+            button2.Font = new Font("MV Boli", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.Location = new Point(12, 16);
+            button2.Name = "button2";
+            button2.Size = new Size(106, 49);
+            button2.TabIndex = 63;
+            button2.Text = "<-Back";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Register
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1033, 452);
+            Controls.Add(button2);
             Controls.Add(password_tx);
             Controls.Add(label3);
             Controls.Add(button1);
@@ -192,5 +205,6 @@
         private Button button1;
         private TextBox password_tx;
         private Label label3;
+        private Button button2;
     }
 }

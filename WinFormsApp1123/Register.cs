@@ -14,10 +14,10 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string query = "insert into Staff (name,email,password,phone_number,address) " +
-                "values(@name,@email,@password,@phone_number,@address)";
-            Program.Command.CommandText = query;
             Program.Command.Connection = Program.Connection;
+            Program.Command.CommandText = "insert into Staff (name,email,password,phone_number,address) " +
+                "values(@name,@email,@password,@phone_number,@address)";
+            Program.Command.Parameters.Clear();
             Program.Command.Parameters.AddWithValue("@name", Name_tx.Text);
             Program.Command.Parameters.AddWithValue("@email", email_tx.Text);
             Program.Command.Parameters.AddWithValue("@password", password_tx.Text);
@@ -33,6 +33,11 @@
             {
                 this.Close();
             };
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

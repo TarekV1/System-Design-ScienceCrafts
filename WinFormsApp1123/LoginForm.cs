@@ -16,7 +16,7 @@ namespace Login
         {
             if (check_credientials(Email_tx.Text, Password_tx.Text))
             {
-                MessageBox.Show("Login Succesfull", "Login Succesfull");
+                MessageBox.Show("Login Successfull", "Login Successfull");
                 this.Hide();
                 new EmployeeMain(name, role).ShowDialog();
                 this.Close();
@@ -32,9 +32,9 @@ namespace Login
             )
             {
                 Program.Command.Connection = Program.Connection;
+                Program.Command.CommandText = "Select count(*) from Staff where email = @email and password = @password";
 
-                string query = "Select count(*) from Staff where email = @email and password = @password";
-                Program.Command.CommandText = query;
+                Program.Command.Parameters.Clear();
                 Program.Command.Parameters.AddWithValue("@email", username);
                 Program.Command.Parameters.AddWithValue("@password", password);
 
@@ -118,6 +118,11 @@ namespace Login
         private void label1_MouseLeave(object sender, EventArgs e)
         {
             label1.ForeColor = Color.Black;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

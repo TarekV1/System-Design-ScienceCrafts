@@ -9,19 +9,19 @@ namespace WinFormsApp1123
             InitializeComponent();
         }
 
-
+        //Employee Button
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
             new LoginForm().ShowDialog();
-            this.Close();
+            this.Show();
         }
-
+        //Customer Button
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
             new Order_Form().ShowDialog();
-            this.Close();
+            this.Show();
         }
 
         private void Home_Load(object sender, EventArgs e)
@@ -32,7 +32,7 @@ namespace WinFormsApp1123
             {
                 Program.Connection.Close();
                 Program.Connection.Open();
-                MessageBox.Show("Connected");
+                MessageBox.Show("Connected","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             catch (Exception er)
             {

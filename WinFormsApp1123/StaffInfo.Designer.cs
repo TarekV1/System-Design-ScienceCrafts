@@ -41,6 +41,7 @@
             label10 = new Label();
             textBox4 = new TextBox();
             textBox5 = new TextBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -170,11 +171,23 @@
             textBox5.Size = new Size(217, 41);
             textBox5.TabIndex = 15;
             // 
+            // button1
+            // 
+            button1.Font = new Font("MV Boli", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(12, 11);
+            button1.Name = "button1";
+            button1.Size = new Size(106, 49);
+            button1.TabIndex = 22;
+            button1.Text = "<-Back";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // StaffInfo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(974, 449);
+            Controls.Add(button1);
             Controls.Add(button2);
             Controls.Add(textBox5);
             Controls.Add(textBox4);
@@ -210,5 +223,6 @@
         private Label label10;
         private TextBox textBox4;
         private TextBox textBox5;
+        private Button button1;
     }
 }

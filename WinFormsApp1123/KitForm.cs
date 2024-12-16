@@ -35,12 +35,17 @@
             Program.Command.Connection = Program.Connection;
             Program.Command.CommandText = "insert into KitInfo(name,description) values(@name,@description)";
             Program.Command.Parameters.Clear();
-            Program.Command.Parameters.AddWithValue("@name",textBox1.Text);
+            Program.Command.Parameters.AddWithValue("@name", textBox1.Text);
             Program.Command.Parameters.AddWithValue("@description", textBox2.Text);
-            if(Program.Command.ExecuteNonQuery() > 0)
-                MessageBox.Show("Kit Submitted Successfully", "Submission",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            if (Program.Command.ExecuteNonQuery() > 0)
+                MessageBox.Show("Kit Submitted Successfully", "Submission", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 MessageBox.Show("Oops Something Went Wrong", "Submission", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

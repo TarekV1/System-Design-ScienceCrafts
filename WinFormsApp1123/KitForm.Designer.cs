@@ -33,6 +33,7 @@
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -87,11 +88,23 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.Font = new Font("MV Boli", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.Location = new Point(12, 12);
+            button2.Name = "button2";
+            button2.Size = new Size(106, 49);
+            button2.TabIndex = 9;
+            button2.Text = "<-Back";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // KitForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(716, 336);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
@@ -110,5 +123,6 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private Button button1;
+        private Button button2;
     }
 }

@@ -34,6 +34,7 @@
             Password_tx = new TextBox();
             Login_bt = new Button();
             label1 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // Email_lb
@@ -100,11 +101,23 @@
             label1.MouseLeave += label1_MouseLeave;
             label1.MouseHover += label1_MouseHover;
             // 
+            // button1
+            // 
+            button1.Font = new Font("MV Boli", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(12, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(106, 49);
+            button1.TabIndex = 6;
+            button1.Text = "<-Back";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(522, 397);
+            Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(Login_bt);
             Controls.Add(Password_tx);
@@ -125,5 +138,6 @@
         private TextBox Password_tx;
         private Button Login_bt;
         private Label label1;
+        private Button button1;
     }
 }
